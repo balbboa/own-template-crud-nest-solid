@@ -50,7 +50,7 @@ export class ModelController {
   }
 
   @Delete(':id')
-  async delete() {
-    return this.deleteService.delete();
+  async delete(@Param('id') id: number) {
+    return this.deleteService.delete(Number(id));
   }
 }
