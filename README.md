@@ -1,6 +1,6 @@
 # TEMPLATE - Backend
 
-- Aplicação em NestJS
+- Aplicação em NestJS + Prisma
 
 # steps
 
