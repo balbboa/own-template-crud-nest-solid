@@ -1,4 +1,4 @@
-# INVENTARIO - Backend
+# TEMPLATE - Backend
 
 - Aplicação em NestJS
 
