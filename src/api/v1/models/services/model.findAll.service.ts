@@ -5,7 +5,7 @@ import { PrismaService } from 'src/database/PrismaService';
 export class ModelsFindAllService {
   constructor(private prisma: PrismaService) {}
 
-  // Lista todas as organizações
+  // Lista todos os modelos
   async findAll() {
     const models = await this.prisma.models.findMany({
       orderBy: { id: 'desc' }

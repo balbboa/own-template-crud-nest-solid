@@ -6,7 +6,7 @@ import { ModelDTO } from '../models.dto';
 export class ModelsCreateService {
   constructor(private prisma: PrismaService) {}
 
-  // Cria uma nova organização
+  // Cria um novo modelo
   async create(data: ModelDTO) {
     try {
       const modelExists = await this.prisma.models.findFirst({

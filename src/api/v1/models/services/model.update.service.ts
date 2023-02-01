@@ -6,7 +6,7 @@ import { ModelDTO } from '../models.dto';
 export class ModelsUpdateService {
   constructor(private prisma: PrismaService) {}
 
-  // Atualiza a organização
+  // Atualiza o modelo
   async update(id: number, data: ModelDTO) {
     try {
       const modelExists = await this.prisma.models.findUnique({
@@ -34,7 +34,7 @@ export class ModelsUpdateService {
       );
     }
 
-    // Atualiza a organização
+    // Atualiza o modelo
     return await this.prisma.models.update({
       data,
       where: {
